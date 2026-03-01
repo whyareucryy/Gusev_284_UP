@@ -1,31 +1,86 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Основные стили приложения */
 body {
-  margin-bottom: 60px;
+    font-family: 'Candara', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Candara', sans-serif;
+    color: #333;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+/* Дополнительный фон для заголовков таблиц, панелей */
+.bg-secondary-light {
+    background-color: #D2DFFF !important;
+}
+
+/* Акцентный цвет для кнопок и ссылок */
+.btn-accent {
+    background-color: #355CBD !important;
+    color: white !important;
+    border: none !important;
+}
+
+    .btn-accent:hover {
+        background-color: #2a4890 !important;
+    }
+
+/* Маленькие кнопки */
+.btn-sm.btn-accent {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Ссылки */
+a.accent-link {
+    color: #355CBD;
+    text-decoration: none;
+}
+
+    a.accent-link:hover {
+        text-decoration: underline;
+    }
+
+/* Таблицы */
+.table thead.bg-secondary-light th {
+    background-color: #D2DFFF;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+/* Карточки */
+.card-header.bg-secondary-light {
+    background-color: #D2DFFF !important;
+    font-weight: 600;
+}
+
+/* Уведомления */
+.alert {
+    border-radius: 0;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Логотип */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
 }

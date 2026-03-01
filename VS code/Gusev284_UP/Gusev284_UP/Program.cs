@@ -1,7 +1,17 @@
+using Gusev284_UP.Data;
+using Gusev284_UP.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Context Db registration.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IRawMaterialCalculator, RawMaterialCalculator>();
 
 var app = builder.Build();
 
@@ -22,7 +32,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Products}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

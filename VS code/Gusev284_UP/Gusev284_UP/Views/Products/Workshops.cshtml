@@ -1,0 +1,54 @@
+﻿@model Gusev284_UP.ViewModels.ProductWorkshopsViewModel
+
+@{
+    ViewData["Title"] = $"Цеха для продукта: {Model.ProductName}";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-4">
+    <!-- Заголовок с логотипом -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 style="font-family: 'Candara', sans-serif; color: #333;">@ViewData["Title"]</h1>
+        <img src="~/images/logo.png" alt="Комфорт Мебель" style="height: 60px;" asp-append-version="true" />
+    </div>
+
+    <!-- Кнопка назад -->
+    <div class="mb-3">
+        <a href="@Url.Action("Index")" class="btn btn-accent">
+            ← Назад к списку продукции
+        </a>
+    </div>
+
+    <!-- Таблица цехов -->
+    @if (Model.Workshops.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover" style="background-color: white;">
+                <thead class="bg-secondary-light">
+                    <tr>
+                        <th>Название цеха</th>
+                        <th>Количество человек для производства</th>
+                        <th>Время изготовления (ч)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var workshop in Model.Workshops)
+                    {
+                        <tr>
+                            <td>@workshop.WorkshopName</td>
+                            <td>@workshop.EmployeeCount</td>
+                            <td>@workshop.TimeHours.ToString("0.##")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            Для данного продукта не указаны цеха производства.
+        </div>
+    }
+</div>

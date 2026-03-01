@@ -1,0 +1,265 @@
+﻿@model IEnumerable<Gusev284_UP.ViewModels.ProductIndexViewModel>
+
+@{
+    ViewData["Title"] = "Продукция компании";
+}
+
+<!-- Подключение Bootstrap (если ещё не подключен в _Layout) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-4">
+    <!-- Заголовок с логотипом -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 style="font-family: 'Candara', sans-serif; color: #333;">@ViewData["Title"]</h1>
+        <img src="/images/logo.png" alt="Логотип компании" style="height: 60px;" />
+    </div>
+
+    <!-- Кнопки действий -->
+    <div class="d-flex gap-2 mb-3">
+        <!-- Кнопка открытия модального окна для добавления (ВЕРНУЛИ АТРИБУТЫ) -->
+        <button type="button" class="btn btn-accent"
+                data-bs-toggle="modal" data-bs-target="#productModal" onclick="clearModal()">
+            + Добавить продукцию
+        </button>
+
+        <!-- Кнопка перехода к калькулятору -->
+        <a href="@Url.Action("Calculate")" class="btn btn-accent">
+            📊 Расчёт сырья
+        </a>
+    </div>
+
+    <!-- Отображение уведомлений (успех/ошибка) -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- Таблица продукции -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover" style="background-color: white;">
+            <thead style="background-color: #D2DFFF;">
+                <tr>
+                    <th>Артикул</th>
+                    <th>Тип продукции</th>
+                    <th>Наименование</th>
+                    <th>Мин. стоимость для партнера</th>
+                    <th>Время изготовления (ч)</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Article</td>
+                        <td>@item.ProductTypeName</td>
+                        <td>@item.Name</td>
+                        <td>@item.MinPriceForPartner.ToString("N2") ₽</td>
+                        <td>@item.TotalTimeHours</td>
+                        <td>
+                            <button class="btn btn-sm btn-accent"
+                                    onclick="openEditModal(@item.ProductId)">
+                                Редактировать
+                            </button>
+                            <a href="@Url.Action("Workshops", new { productId = item.ProductId })"
+                               class="btn btn-sm btn-accent">
+                                Цеха
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Модальное окно для добавления/редактирования продукции -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #D2DFFF;">
+                <h5 class="modal-title" id="productModalLabel">Добавление продукции</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="productForm" asp-action="SaveProduct" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" id="ProductId" name="ProductId" value="0" />
+
+                <div class="modal-body">
+                    <!-- Артикул -->
+                    <div class="mb-3">
+                        <label for="Article" class="form-label">Артикул *</label>
+                        <input type="text" class="form-control" id="Article" name="Article" required maxlength="50" />
+                        <div class="invalid-feedback">Артикул обязателен</div>
+                    </div>
+
+                    <!-- Тип продукции (выпадающий список) -->
+                    <div class="mb-3">
+                        <label for="ProductTypeId" class="form-label">Тип продукции *</label>
+                        <select class="form-select" id="ProductTypeId" name="ProductTypeId" required>
+                            <option value="">Выберите тип</option>
+                            @foreach (var type in ViewBag.ProductTypes as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>()))
+                            {
+                                <option value="@type.Value">@type.Text</option>
+                            }
+                        </select>
+                        <div class="invalid-feedback">Выберите тип продукции</div>
+                    </div>
+
+                    <!-- Наименование -->
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Наименование *</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required maxlength="200" />
+                        <div class="invalid-feedback">Наименование обязательно</div>
+                    </div>
+
+                    <!-- Минимальная стоимость для партнера -->
+                    <div class="mb-3">
+                        <label for="MinPriceForPartner" class="form-label">Мин. стоимость для партнера *</label>
+                        <input type="number" step="0.01" min="0.01" class="form-control" id="MinPriceForPartner"
+                               name="MinPriceForPartner" required />
+                        <div class="invalid-feedback">Введите положительную стоимость</div>
+                    </div>
+
+                    <!-- Основной материал (выпадающий список) -->
+                    <div class="mb-3">
+                        <label for="MainMaterialId" class="form-label">Основной материал *</label>
+                        <select class="form-select" id="MainMaterialId" name="MainMaterialId" required>
+                            <option value="">Выберите материал</option>
+                            @foreach (var material in ViewBag.MaterialTypes as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>()))
+                            {
+                                <option value="@material.Value">@material.Text</option>
+                            }
+                        </select>
+                        <div class="invalid-feedback">Выберите основной материал</div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-accent">
+                        Сохранить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Bootstrap JS для модальных окон -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Функция для очистки формы перед добавлением нового продукта
+        function clearModal() {
+            document.getElementById('productForm').reset();
+            document.getElementById('ProductId').value = '0';
+            document.getElementById('productModalLabel').textContent = 'Добавление продукции';
+
+            // Убираем классы ошибок
+            document.querySelectorAll('.is-invalid').forEach(el => {
+                el.classList.remove('is-invalid');
+            });
+        }
+
+        // Функция для открытия модального окна с данными продукта для редактирования
+        function openEditModal(productId) {
+            // Очищаем форму
+            clearModal();
+
+            // Загружаем данные продукта через AJAX
+            fetch(`/Products/GetProductForEdit/${productId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Продукт не найден');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Заполняем поля формы
+                    document.getElementById('ProductId').value = data.productId;
+                    document.getElementById('Article').value = data.article;
+                    document.getElementById('ProductTypeId').value = data.productTypeId;
+                    document.getElementById('Name').value = data.name;
+                    document.getElementById('MinPriceForPartner').value = data.minPriceForPartner;
+                    document.getElementById('MainMaterialId').value = data.mainMaterialId;
+
+                    // Меняем заголовок модального окна
+                    document.getElementById('productModalLabel').textContent = 'Редактирование продукции';
+
+                    // Открываем модальное окно
+                    var modal = new bootstrap.Modal(document.getElementById('productModal'));
+                    modal.show();
+                })
+                .catch(error => {
+                    alert('Ошибка при загрузке данных: ' + error.message);
+                });
+        }
+
+        // Валидация формы перед отправкой
+        document.getElementById('productForm').addEventListener('submit', function(event) {
+            let isValid = true;
+
+            // Проверка артикула
+            const article = document.getElementById('Article');
+            if (!article.value.trim()) {
+                article.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                article.classList.remove('is-invalid');
+            }
+
+            // Проверка типа продукции
+            const productType = document.getElementById('ProductTypeId');
+            if (!productType.value) {
+                productType.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                productType.classList.remove('is-invalid');
+            }
+
+            // Проверка наименования
+            const name = document.getElementById('Name');
+            if (!name.value.trim()) {
+                name.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                name.classList.remove('is-invalid');
+            }
+
+            // Проверка стоимости
+            const price = document.getElementById('MinPriceForPartner');
+            if (!price.value || parseFloat(price.value) <= 0) {
+                price.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                price.classList.remove('is-invalid');
+            }
+
+            // Проверка материала
+            const material = document.getElementById('MainMaterialId');
+            if (!material.value) {
+                material.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                material.classList.remove('is-invalid');
+            }
+
+            if (!isValid) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        });
+    </script>
+}
