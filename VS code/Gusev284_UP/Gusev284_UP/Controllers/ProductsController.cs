@@ -1,6 +1,6 @@
 ﻿using Gusev284_UP.Data;
 using Gusev284_UP.Models;
-using Gusev284_UP.Services;      // для IRawMaterialCalculator
+using Gusev284_UP.Services;
 using Gusev284_UP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -24,12 +24,14 @@ namespace Gusev284_UP.Controllers
         {
             var products = await _context.Products
                 .Include(p => p.ProductType)
+                .Include(p => p.MainMaterial)  // ДОБАВЛЕНО для получения названия материала
                 .Include(p => p.ProductWorkshops)
                 .Select(p => new ProductIndexViewModel
                 {
                     ProductId = p.ProductId,
                     Article = p.Article,
                     ProductTypeName = p.ProductType.Name,
+                    MainMaterialName = p.MainMaterial.Name,  // ДОБАВЛЕНО поле для основного материала
                     Name = p.Name,
                     MinPriceForPartner = p.MinPriceForPartner,
                     TotalTimeHours = (int)Math.Ceiling(p.ProductWorkshops.Sum(pw => pw.TimeHours))
@@ -133,6 +135,32 @@ namespace Gusev284_UP.Controllers
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Ошибка при сохранении: {ex.Message}";
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        // ==================== УДАЛЕНИЕ ПРОДУКТА (НОВЫЙ МЕТОД) ====================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                TempData["ErrorMessage"] = "Продукт не найден.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            try
+            {
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Продукт успешно удалён.";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Ошибка при удалении: {ex.Message}";
             }
 
             return RedirectToAction(nameof(Index));

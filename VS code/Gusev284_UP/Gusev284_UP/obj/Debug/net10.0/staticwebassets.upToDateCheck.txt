@@ -1,5 +1,7 @@
-wwwroot\favicon.ico
 wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\images\icon.ico
+wwwroot\images\logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,8 +63,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\icon.ico
-wwwroot\images\logo.png
 C:\Users\mihai\Desktop\Gusev_284_UP\VS code\Gusev284_UP\Gusev284_UP\wwwroot\favicon.ico
 C:\Users\mihai\Desktop\Gusev_284_UP\VS code\Gusev284_UP\Gusev284_UP\wwwroot\css\site.css
 C:\Users\mihai\Desktop\Gusev_284_UP\VS code\Gusev284_UP\Gusev284_UP\wwwroot\js\site.js

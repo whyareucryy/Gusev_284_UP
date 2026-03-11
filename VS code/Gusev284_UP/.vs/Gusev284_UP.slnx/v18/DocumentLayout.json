@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\viewmodels\\productformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\viewmodels\\productformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\views\\products\\workshops.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\views\\products\\workshops.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -25,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\services\\rawmaterialcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\viewmodels\\productworkshopsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\viewmodels\\productworkshopsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\viewmodels\\productformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\viewmodels\\productformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|solutionrelative:gusev284_up\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07139901-D078-9DC7-8B48-854005E930EB}|Gusev284_UP\\Gusev284_UP.csproj|c:\\users\\mihai\\desktop\\gusev_284_up\\vs code\\gusev284_up\\gusev284_up\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,80 +118,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "Gusev284_UP\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "Gusev284_UP\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-03-01T15:47:52.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-01T15:23:43.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RawMaterialCalculateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
-              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
-              "RelativeToolTip": "Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T15:11:58.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-01T14:40:21.142Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Calculate.cshtml",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Calculate.cshtml",
-              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Calculate.cshtml",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Calculate.cshtml",
-              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Calculate.cshtml",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-01T15:27:35.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Workshops.cshtml",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Workshops.cshtml",
-              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Workshops.cshtml",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Workshops.cshtml",
-              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Workshops.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-01T15:19:49.371Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Gusev284_UP\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T17:25:56.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAALABAAAAAAAAAAAowMgBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-01T14:40:21.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Program.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Program.cs",
@@ -200,7 +157,106 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Gusev284_UP\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAqwPAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T14:35:57.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductFormViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
+              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
+              "RelativeToolTip": "Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:11:25.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
+              "RelativeToolTip": "Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:10:51.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Workshops.cshtml",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Workshops.cshtml",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Workshops.cshtml",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Workshops.cshtml",
+              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Workshops.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-01T15:19:49.371Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Calculate.cshtml",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Calculate.cshtml",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Products\\Calculate.cshtml",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Products\\Calculate.cshtml",
+              "RelativeToolTip": "Gusev284_UP\\Views\\Products\\Calculate.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-01T15:27:35.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RawMaterialCalculateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
+              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
+              "RelativeToolTip": "Gusev284_UP\\ViewModels\\RawMaterialCalculateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:11:58.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Gusev284_UP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-01T15:23:43.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Gusev284_UP\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Gusev284_UP\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-01T15:47:52.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IRawMaterialCalculator.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Services\\IRawMaterialCalculator.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Services\\IRawMaterialCalculator.cs",
@@ -212,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "RawMaterialCalculator.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Services\\RawMaterialCalculator.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Services\\RawMaterialCalculator.cs",
@@ -224,19 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Gusev284_UP\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Gusev284_UP\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T14:35:57.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ProductWorkshopsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductWorkshopsViewModel.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\ProductWorkshopsViewModel.cs",
@@ -248,31 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductFormViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
-              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
-              "RelativeToolTip": "Gusev284_UP\\ViewModels\\ProductFormViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T15:11:25.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductIndexViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
-              "RelativeDocumentMoniker": "Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
-              "ToolTip": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
-              "RelativeToolTip": "Gusev284_UP\\ViewModels\\ProductIndexViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T15:10:51.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Gusev284_UP.csproj",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Gusev284_UP.csproj",
               "RelativeDocumentMoniker": "Gusev284_UP\\Gusev284_UP.csproj",
@@ -284,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\Product.cs",
@@ -296,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MaterialType.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\MaterialType.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\MaterialType.cs",
@@ -308,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ProductType.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\ProductType.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\ProductType.cs",
@@ -320,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Workshop.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\Workshop.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\Workshop.cs",
@@ -332,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Data\\ApplicationDbContext.cs",
@@ -344,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\appsettings.json",
               "RelativeDocumentMoniker": "Gusev284_UP\\appsettings.json",
@@ -356,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\ErrorViewModel.cs",
@@ -368,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ProductWorkshop.cs",
               "DocumentMoniker": "C:\\Users\\mihai\\Desktop\\Gusev_284_UP\\VS code\\Gusev284_UP\\Gusev284_UP\\Models\\ProductWorkshop.cs",
               "RelativeDocumentMoniker": "Gusev284_UP\\Models\\ProductWorkshop.cs",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gusev284_UP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72497b9d213400921df8a173ea50045f3ce76b17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b73ed7c4b65a8e69e752e3e73d75dc0030fc6d34")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gusev284_UP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gusev284_UP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

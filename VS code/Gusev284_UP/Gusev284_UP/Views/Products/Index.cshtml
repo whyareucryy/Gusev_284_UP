@@ -4,8 +4,153 @@
     ViewData["Title"] = "Продукция компании";
 }
 
-<!-- Подключение Bootstrap (если ещё не подключен в _Layout) -->
+<!-- Подключение Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Подключение Font Awesome для иконок -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+<style>
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 4px solid #355CBD;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(53, 92, 189, 0.15);
+        }
+
+    .product-type-badge {
+        background-color: #D2DFFF;
+        color: #333;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .product-title {
+        font-family: 'Candara', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .product-detail-item {
+        display: flex;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .product-detail-label {
+        width: 140px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .product-detail-value {
+        color: #333;
+        font-weight: 500;
+    }
+
+    .product-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .time-info {
+        background-color: #f8f9fa;
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        color: #355CBD;
+        font-weight: 600;
+    }
+
+        .time-info i {
+            margin-right: 5px;
+            color: #355CBD;
+        }
+
+    .action-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: all 0.2s;
+    }
+
+        .btn-icon i {
+            font-size: 1rem;
+        }
+
+    .btn-edit {
+        background-color: #355CBD;
+        color: white;
+    }
+
+        .btn-edit:hover {
+            background-color: #2a4890;
+            color: white;
+            transform: scale(1.1);
+        }
+
+    .btn-workshop {
+        background-color: #D2DFFF;
+        color: #355CBD;
+    }
+
+        .btn-workshop:hover {
+            background-color: #b8c9ff;
+            color: #2a4890;
+            transform: scale(1.1);
+        }
+
+    .btn-delete {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .btn-delete:hover {
+            background-color: #b02a37;
+            color: white;
+            transform: scale(1.1);
+        }
+
+    .header-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .stats-badge {
+        background-color: #355CBD;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+    }
+</style>
 
 <div class="container mt-4">
     <!-- Заголовок с логотипом -->
@@ -15,72 +160,113 @@
     </div>
 
     <!-- Кнопки действий -->
-    <div class="d-flex gap-2 mb-3">
-        <!-- Кнопка открытия модального окна для добавления (ВЕРНУЛИ АТРИБУТЫ) -->
-        <button type="button" class="btn btn-accent"
-                data-bs-toggle="modal" data-bs-target="#productModal" onclick="clearModal()">
-            + Добавить продукцию
-        </button>
-
-        <!-- Кнопка перехода к калькулятору -->
-        <a href="@Url.Action("Calculate")" class="btn btn-accent">
-            📊 Расчёт сырья
-        </a>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex gap-2">
+            <button type="button" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#productModal" onclick="clearModal()">
+                <i class="fas fa-plus me-1"></i> Добавить продукцию
+            </button>
+            <a href="@Url.Action("Calculate")" class="btn btn-accent">
+                <i class="fas fa-calculator me-1"></i> Расчёт сырья
+            </a>
+        </div>
+        <div class="stats-badge">
+            <i class="fas fa-box me-1"></i> Всего продуктов: @Model.Count()
+        </div>
     </div>
 
-    <!-- Отображение уведомлений (успех/ошибка) -->
+    <!-- Отображение уведомлений -->
     @if (TempData["SuccessMessage"] != null)
     {
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            @TempData["SuccessMessage"]
+            <i class="fas fa-check-circle me-2"></i> @TempData["SuccessMessage"]
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     }
     @if (TempData["ErrorMessage"] != null)
     {
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            @TempData["ErrorMessage"]
+            <i class="fas fa-exclamation-circle me-2"></i> @TempData["ErrorMessage"]
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     }
 
-    <!-- Таблица продукции -->
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover" style="background-color: white;">
-            <thead style="background-color: #D2DFFF;">
-                <tr>
-                    <th>Артикул</th>
-                    <th>Тип продукции</th>
-                    <th>Наименование</th>
-                    <th>Мин. стоимость для партнера</th>
-                    <th>Время изготовления (ч)</th>
-                    <th>Действия</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Article</td>
-                        <td>@item.ProductTypeName</td>
-                        <td>@item.Name</td>
-                        <td>@item.MinPriceForPartner.ToString("N2") ₽</td>
-                        <td>@item.TotalTimeHours</td>
-                        <td>
-                            <button class="btn btn-sm btn-accent"
-                                    onclick="openEditModal(@item.ProductId)">
-                                Редактировать
+    <!-- Список продуктов в виде карточек -->
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <!-- Тип продукции (как badge) -->
+                    <div class="product-type-badge">
+                        <i class="fas fa-tag me-1"></i> @item.ProductTypeName
+                    </div>
+
+                    <!-- Название продукта -->
+                    <div class="product-title">
+                        @item.Name
+                    </div>
+
+                    <!-- Детальная информация -->
+                    <div class="product-detail-item">
+                        <span class="product-detail-label">Артикул:</span>
+                        <span class="product-detail-value">@item.Article</span>
+                    </div>
+
+                    <div class="product-detail-item">
+                        <span class="product-detail-label">Стоимость для партнера:</span>
+                        <span class="product-detail-value">@item.MinPriceForPartner.ToString("N2") ₽</span>
+                    </div>
+
+                    <!-- Основной материал (если добавлен в модель) -->
+                    @if (!string.IsNullOrEmpty(item.MainMaterialName))
+                    {
+                        <div class="product-detail-item">
+                            <span class="product-detail-label">Основной материал:</span>
+                            <span class="product-detail-value">@item.MainMaterialName</span>
+                        </div>
+                    }
+
+                    <!-- Нижняя часть карточки с временем и кнопками -->
+                    <div class="product-footer">
+                        <div class="time-info">
+                            <i class="far fa-clock"></i> требуется часов: @item.TotalTimeHours.ToString("0.#")
+                        </div>
+
+                        <div class="action-buttons">
+                            <!-- Кнопка редактирования -->
+                            <button class="btn-icon btn-edit" onclick="openEditModal(@item.ProductId)" title="Редактировать">
+                                <i class="fas fa-pen"></i>
                             </button>
-                            <a href="@Url.Action("Workshops", new { productId = item.ProductId })"
-                               class="btn btn-sm btn-accent">
-                                Цеха
+
+                            <!-- Кнопка цехов -->
+                            <a href="@Url.Action("Workshops", new { productId = item.ProductId })" class="btn-icon btn-workshop" title="Список цехов">
+                                <i class="fas fa-industry"></i>
                             </a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+
+                            <!-- Кнопка удаления -->
+                            <form asp-action="Delete" method="post" style="display: inline;"
+                                  onsubmit="return confirm('Удалить продукт? Все связанные данные будут также удалены.');">
+                                <input type="hidden" name="id" value="@item.ProductId" />
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn-icon btn-delete" title="Удалить">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center py-5">
+            <i class="fas fa-box-open fa-3x mb-3" style="color: #355CBD;"></i>
+            <h4>Нет продукции</h4>
+            <p>Нажмите "Добавить продукцию", чтобы создать первую запись.</p>
+        </div>
+    }
 </div>
 
 <!-- Модальное окно для добавления/редактирования продукции -->
@@ -157,20 +343,22 @@
 </div>
 
 @section Scripts {
-    <!-- Bootstrap JS для модальных окон -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         // Функция для очистки формы перед добавлением нового продукта
         function clearModal() {
-            document.getElementById('productForm').reset();
-            document.getElementById('ProductId').value = '0';
-            document.getElementById('productModalLabel').textContent = 'Добавление продукции';
+            const form = document.getElementById('productForm');
+            if (form) {
+                form.reset();
+                document.getElementById('ProductId').value = '0';
+                document.getElementById('productModalLabel').textContent = 'Добавление продукции';
 
-            // Убираем классы ошибок
-            document.querySelectorAll('.is-invalid').forEach(el => {
-                el.classList.remove('is-invalid');
-            });
+                // Убираем классы ошибок
+                document.querySelectorAll('.is-invalid').forEach(el => {
+                    el.classList.remove('is-invalid');
+                });
+            }
         }
 
         // Функция для открытия модального окна с данными продукта для редактирования
@@ -208,57 +396,62 @@
         }
 
         // Валидация формы перед отправкой
-        document.getElementById('productForm').addEventListener('submit', function(event) {
-            let isValid = true;
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('productForm');
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    let isValid = true;
 
-            // Проверка артикула
-            const article = document.getElementById('Article');
-            if (!article.value.trim()) {
-                article.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                article.classList.remove('is-invalid');
-            }
+                    // Проверка артикула
+                    const article = document.getElementById('Article');
+                    if (!article.value.trim()) {
+                        article.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        article.classList.remove('is-invalid');
+                    }
 
-            // Проверка типа продукции
-            const productType = document.getElementById('ProductTypeId');
-            if (!productType.value) {
-                productType.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                productType.classList.remove('is-invalid');
-            }
+                    // Проверка типа продукции
+                    const productType = document.getElementById('ProductTypeId');
+                    if (!productType.value) {
+                        productType.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        productType.classList.remove('is-invalid');
+                    }
 
-            // Проверка наименования
-            const name = document.getElementById('Name');
-            if (!name.value.trim()) {
-                name.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                name.classList.remove('is-invalid');
-            }
+                    // Проверка наименования
+                    const name = document.getElementById('Name');
+                    if (!name.value.trim()) {
+                        name.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        name.classList.remove('is-invalid');
+                    }
 
-            // Проверка стоимости
-            const price = document.getElementById('MinPriceForPartner');
-            if (!price.value || parseFloat(price.value) <= 0) {
-                price.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                price.classList.remove('is-invalid');
-            }
+                    // Проверка стоимости
+                    const price = document.getElementById('MinPriceForPartner');
+                    if (!price.value || parseFloat(price.value) <= 0) {
+                        price.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        price.classList.remove('is-invalid');
+                    }
 
-            // Проверка материала
-            const material = document.getElementById('MainMaterialId');
-            if (!material.value) {
-                material.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                material.classList.remove('is-invalid');
-            }
+                    // Проверка материала
+                    const material = document.getElementById('MainMaterialId');
+                    if (!material.value) {
+                        material.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        material.classList.remove('is-invalid');
+                    }
 
-            if (!isValid) {
-                event.preventDefault();
-                event.stopPropagation();
+                    if (!isValid) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                });
             }
         });
     </script>

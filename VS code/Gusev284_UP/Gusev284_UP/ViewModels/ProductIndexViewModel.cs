@@ -8,5 +8,6 @@
         public string Name { get; set; }
         public decimal MinPriceForPartner { get; set; }
         public int TotalTimeHours { get; set; }
+        public string MainMaterialName { get; set; }
     }
 }
